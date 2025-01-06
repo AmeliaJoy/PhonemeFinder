@@ -111,9 +111,13 @@
 			membershipExceptions = (
 				Resources/_locales,
 				Resources/background.js,
+				"Resources/cmudict-0.7b",
+				Resources/CMUDictionary.js,
+				Resources/content.css,
 				Resources/content.js,
 				Resources/images,
 				Resources/manifest.json,
+				Resources/numbers2words.min.js,
 				Resources/popup.css,
 				Resources/popup.html,
 				Resources/popup.js,
@@ -126,15 +130,33 @@
 			membershipExceptions = (
 				Resources/_locales,
 				Resources/background.js,
+				"Resources/cmudict-0.7b",
+				Resources/CMUDictionary.js,
+				Resources/content.css,
 				Resources/content.js,
 				Resources/images,
 				Resources/manifest.json,
+				Resources/numbers2words.min.js,
 				Resources/popup.css,
 				Resources/popup.html,
 				Resources/popup.js,
 				SafariWebExtensionHandler.swift,
 			);
 			target = 101B1A3B2D161E7400062CC6 /* PhonemeFinder Extension (macOS) */;
+		};
+		10E5A4262D163A6B00AA2917 /* Exceptions for "Shared (Extension)" folder in "PhonemeFinder (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Resources/cmudict-0.7b",
+			);
+			target = 101B1A132D161E7300062CC6 /* PhonemeFinder (iOS) */;
+		};
+		10E5A4272D163A6B00AA2917 /* Exceptions for "Shared (Extension)" folder in "PhonemeFinder (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Resources/cmudict-0.7b",
+			);
+			target = 101B1A252D161E7300062CC6 /* PhonemeFinder (macOS) */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -151,6 +173,8 @@
 		101B1A052D161E7300062CC6 /* Shared (Extension) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				10E5A4262D163A6B00AA2917 /* Exceptions for "Shared (Extension)" folder in "PhonemeFinder (iOS)" target */,
+				10E5A4272D163A6B00AA2917 /* Exceptions for "Shared (Extension)" folder in "PhonemeFinder (macOS)" target */,
 				101B1A742D161E7400062CC6 /* Exceptions for "Shared (Extension)" folder in "PhonemeFinder Extension (iOS)" target */,
 				101B1A752D161E7400062CC6 /* Exceptions for "Shared (Extension)" folder in "PhonemeFinder Extension (macOS)" target */,
 			);

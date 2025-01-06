@@ -2,10 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="popup.css">
-    <script type="module" src="popup.js"></script>
+        <link rel="stylesheet" href="popup.css">
+            <script type="module" src="CMUDictionary.js"></script>
+            <script type="module" src="numbers2words.min.js"></script>
+            <script type="module" src="popup.js"></script>
 </head>
 <body>
-    <strong>Hello World!</strong>
+    <p>Enter an ARPABET syllable to search for, or enter basic R syllables</p>
+    <input type="text" id="word-input">
+       <button id="highlight-btn">Search for Words</button><br>
+       <a href="https://en.wikipedia.org/wiki/ARPABET">Arpabet Guide </a>
 </body>
 </html>
