@@ -223,7 +223,7 @@ function find_pronunciation(syllable) {
     case "ear":
         return "IY R"
     default:
-        return syllable.upper();
+        return syllable.toUpperCase();
     }
 }
 function find_words(phonemized_words, phoneme) {
