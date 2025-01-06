@@ -27,7 +27,7 @@ function highlightWords(words)
     {
         let regex = new RegExp(`\\b(${word})\\b`, 'gi');
         document.querySelectorAll("*").forEach((node)=>{if(node.tagName != "STYLE" && node.tagName != "SCRIPT"&& node.tagName != "MARK"){for(const child of node.childNodes){if(child.nodeType == Node.TEXT_NODE){child.nodeValue = child.nodeValue.replace(regex,"<mark>$1</mark>");}}}})
-        let htmregex = new RegExp(`&lt;mark&gt;(${word})&lt;/mark&gt`,'gi')
+        let htmregex = new RegExp(`&lt;mark&gt;(${word})&lt;/mark&gt;`,'gi')
         document.querySelector("*").innerHTML = document.querySelector("*").innerHTML.replace(htmregex,"<mark>"+"$1"+"</mark>")
     }
     
